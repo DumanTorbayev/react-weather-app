@@ -1,0 +1,90 @@
+/*
+ * Global Styles
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,700;1,400&display=swap');
+
+$browser-context: 14; // Default
+$browser-mobile: 10; // Default
+
+html {
+  font-size: #{$browser-context}px;
+  @media (max-width: 576.98px) {
+    font-size: #{$browser-mobile}px;
+  }
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
+  font-size: #{$browser-context}px;
+  font-weight: 300;
+  line-height: 1.5;
+  min-height: 100vh;
+  text-shadow: 0 0 2px #000;
+  overflow: hidden;
+  @media (max-width: 992.98px) {
+    overflow: auto;
+  }
+
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0 0 20px;
+  line-height: normal;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #777;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal
+}
+
+p {
+  margin-top: 0
+}
+
+form {
+
+  input, textarea, select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+}

@@ -1,0 +1,266 @@
+#root {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (max-width: 1366.98px) {
+    max-width: 1200px;
+  }
+  @media (max-width: 1200.98px) {
+    max-width: 992px;
+  }
+}
+
+.header-title {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 1rem 0;
+  opacity: 0;
+  visibility: hidden;
+  color: #fff;
+
+  &.entering {
+    animation: isVisible 1s ease-out forwards;
+  }
+
+  &.entered {
+    animation: isVisible 1s ease-out forwards;
+  }
+}
+
+.body-title {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(310%);
+  @media (max-width: 992.98px) {
+
+  }
+
+  &.entered {
+    animation: bodyTitleToTop 1s ease-out forwards;
+  }
+
+  &.entering {
+    animation: bodyTitleToTop 1s ease-out forwards;
+  }
+}
+
+.search-wrap {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 50px;
+  transform: translateY(450%);
+  @media (max-width: 992.98px) {
+  }
+
+  &.entered {
+    animation: searchToTop 1.5s ease-out forwards;
+  }
+
+  &.entering {
+    animation: searchToTop 1.5s ease-out forwards;
+  }
+
+  input {
+    flex: 0 0 80%;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    flex: 0 0 20%;
+    background-color: #7C337A;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    padding: .5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.result-wrap {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15%);
+
+  &.entered {
+    animation: resultToTop 1.5s ease-out forwards;
+  }
+
+  &.entering {
+    animation: resultToTop 1.5s ease-out forwards;
+  }
+}
+
+.not-found {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(500%);
+
+    &.entered {
+      animation: notFoundToTop 1.5s ease-out forwards;
+    }
+
+    &.entering {
+      animation: notFoundToTop 1.5s ease-out forwards;
+    }
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 3rem;
+
+    svg {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.forecast-wrap {
+  display: flex;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1rem 0;
+}
+
+.forecast-title {
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  padding: .625rem 3rem;
+  color: #fff;
+  font-size: 1.5rem;
+
+  &:not(:last-child) {
+    margin-right: .625rem;
+  }
+}
+
+.current-weather-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.location {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.current-day {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.current-weather-info {
+  display: flex;
+  flex: 0 0 50%;
+  @media (max-width: 992.98px) {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  & > div {
+    flex: 0 0 40%;
+  }
+}
+
+.weather-icon {
+  display: flex;
+  justify-content: flex-end;
+
+  .svg-inline--fa {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.temp {
+  font-size: 5rem;
+  padding-left: 2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding-left: 2rem;
+}
+
+.weather-container {
+  display: flex;
+  margin-top: 3rem;
+  @media (max-width: 992.98px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 10px;
+  padding: .625rem 3rem;
+  flex: 0 0 50%;
+  @media (max-width: 992.98px) {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  &--items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    flex: 0 0 50%;
+    padding: 1rem 0;
+  }
+}

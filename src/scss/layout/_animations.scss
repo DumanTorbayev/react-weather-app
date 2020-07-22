@@ -1,0 +1,58 @@
+@keyframes resultToTop {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(10%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes notFoundToTop {
+  0% {
+    transform: translateY(500%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(150%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes searchToTop {
+  0% {
+    transform: translateY(450%);
+  }
+  100% {
+    transform: translateY(15%);
+  }
+}
+
+@keyframes bodyTitleToTop {
+  0% {
+    transform: translateY(310%);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes isVisible {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
