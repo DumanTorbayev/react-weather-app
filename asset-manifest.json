@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DumanTorbayev/weather-react-app/static/css/main.9f9fadbb.chunk.css",
+    "main.css": "/DumanTorbayev/weather-react-app/static/css/main.f1127ab4.chunk.css",
     "main.js": "/DumanTorbayev/weather-react-app/static/js/main.68c7595e.chunk.js",
     "main.js.map": "/DumanTorbayev/weather-react-app/static/js/main.68c7595e.chunk.js.map",
     "runtime-main.js": "/DumanTorbayev/weather-react-app/static/js/runtime-main.3a90f2ac.js",
@@ -8,16 +8,16 @@
     "static/js/2.cf0539fb.chunk.js": "/DumanTorbayev/weather-react-app/static/js/2.cf0539fb.chunk.js",
     "static/js/2.cf0539fb.chunk.js.map": "/DumanTorbayev/weather-react-app/static/js/2.cf0539fb.chunk.js.map",
     "index.html": "/DumanTorbayev/weather-react-app/index.html",
-    "precache-manifest.b79a183a3f0c73cf6ad1434f09d3897b.js": "/DumanTorbayev/weather-react-app/precache-manifest.b79a183a3f0c73cf6ad1434f09d3897b.js",
+    "precache-manifest.02f21a7e2e0a3355c1005c570fa1dda1.js": "/DumanTorbayev/weather-react-app/precache-manifest.02f21a7e2e0a3355c1005c570fa1dda1.js",
     "service-worker.js": "/DumanTorbayev/weather-react-app/service-worker.js",
-    "static/css/main.9f9fadbb.chunk.css.map": "/DumanTorbayev/weather-react-app/static/css/main.9f9fadbb.chunk.css.map",
+    "static/css/main.f1127ab4.chunk.css.map": "/DumanTorbayev/weather-react-app/static/css/main.f1127ab4.chunk.css.map",
     "static/js/2.cf0539fb.chunk.js.LICENSE.txt": "/DumanTorbayev/weather-react-app/static/js/2.cf0539fb.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/DumanTorbayev/weather-react-app/static/media/bg.fc2459a9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3a90f2ac.js",
     "static/js/2.cf0539fb.chunk.js",
-    "static/css/main.9f9fadbb.chunk.css",
+    "static/css/main.f1127ab4.chunk.css",
     "static/js/main.68c7595e.chunk.js"
   ]
 }
