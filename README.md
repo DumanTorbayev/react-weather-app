@@ -3,12 +3,11 @@
 ## Описание
 
 Это простое приложение погоды на React.js, использующее API OpenWeatherMap.<br />
-Посмотреть приложение можно тут https://dumantorbayev.github.io/weather-react-app/
 
 ## Инструкции
 Сначала клонируйте этот репозиторий.
 
-### `$ git clone https://github.com/DumanTorbayev/weather-react-app.git`
+### `$ git clone https://github.com/DumanTorbayev/react-weather-app.git`
 
 Установить зависимости. Убедитесь, что в вашей системе уже установлены nodejs & npm.
 
