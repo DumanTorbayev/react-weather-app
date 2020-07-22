@@ -1,11 +1,43 @@
-@keyframes resultToTop {
+@-webkit-keyframes resultToTop {
   0% {
+    -webkit-transform: translateY(30%);
     transform: translateY(30%);
     opacity: 0;
     visibility: hidden;
   }
   100% {
+    -webkit-transform: translateY(10%);
     transform: translateY(10%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes resultToTop {
+  0% {
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes notFoundToTop {
+  0% {
+    -webkit-transform: translateY(500%);
+    transform: translateY(500%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: translateY(150%);
+    transform: translateY(150%);
     opacity: 1;
     visibility: visible;
   }
@@ -13,36 +45,79 @@
 
 @keyframes notFoundToTop {
   0% {
+    -webkit-transform: translateY(500%);
     transform: translateY(500%);
     opacity: 0;
     visibility: hidden;
   }
   100% {
+    -webkit-transform: translateY(150%);
     transform: translateY(150%);
     opacity: 1;
     visibility: visible;
   }
 }
 
-@keyframes searchToTop {
+@-webkit-keyframes searchToTop {
   0% {
+    -webkit-transform: translateY(450%);
     transform: translateY(450%);
   }
   100% {
+    -webkit-transform: translateY(15%);
     transform: translateY(15%);
   }
 }
 
-@keyframes bodyTitleToTop {
+@keyframes searchToTop {
   0% {
+    -webkit-transform: translateY(450%);
+    transform: translateY(450%);
+  }
+  100% {
+    -webkit-transform: translateY(15%);
+    transform: translateY(15%);
+  }
+}
+
+@-webkit-keyframes bodyTitleToTop {
+  0% {
+    -webkit-transform: translateY(310%);
     transform: translateY(310%);
     opacity: 1;
     visibility: visible;
   }
   100% {
+    -webkit-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@keyframes bodyTitleToTop {
+  0% {
+    -webkit-transform: translateY(310%);
+    transform: translateY(310%);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes isVisible {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
