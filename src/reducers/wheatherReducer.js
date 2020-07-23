@@ -12,18 +12,13 @@ export const weather = (state, action) => {
             return {
                 ...state,
                 weatherData: action.payload,
-                isFetching: false
+                isLoaded: true,
             }
         case 'SET_FORECAST':
             return {
                 ...state,
                 forecast: action.payload,
-                isFetching: false
-            }
-        case 'SET_IS_LOADED':
-            return {
-                ...state,
-                isLoaded: action.payload,
+                isLoaded: true,
             }
         case 'SET_IS_FETCHING':
             return {
@@ -33,7 +28,8 @@ export const weather = (state, action) => {
         case 'SET_ERROR':
             return {
                 ...state,
-                error: action.payload
+                error: action.payload,
+                isLoaded: true,
             }
         default:
             return state

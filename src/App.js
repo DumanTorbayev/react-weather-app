@@ -1,7 +1,7 @@
 import React, {useReducer} from 'react';
 import {Header, Search, Result, NotFound, Preloader} from "./components";
 import {weather, initialState} from "./reducers/wheatherReducer";
-import {setError, setForecast, setIsFetching, setIsLoaded, setWeather} from "./actions/weatherActions";
+import {setError, setForecast, setIsFetching, setWeather} from "./actions/weatherActions";
 import axios from "axios";
 import {date} from "./current-date";
 import {getData} from "./api/api";
@@ -31,13 +31,11 @@ const App = () => {
                 dispatch(setWeather(weatherInfo));
                 dispatch(setForecast(forecast.data.list));
                 dispatch(setError(false));
-                dispatch(setIsLoaded(true));
                 dispatch(setIsFetching(false));
             }))
             .catch(error => {
                 console.log(error);
                 dispatch(setError(true));
-                dispatch(setIsLoaded(true));
                 dispatch(setIsFetching(false));
             })
     }
@@ -55,22 +53,23 @@ const App = () => {
                     {state => <h1 className={`body-title ${state}`}>wheather app</h1>}
                 </Transition>
                 <Search onSearch={onSearch} isLoaded={isLoaded}/>
-                {
-                    !error ?
-                        <>
-                            <Transition
-                                in={isLoaded}
-                                timeout={1000}
-                            >
-                                {state => (
-                                    <div className={`result-wrap ${state}`}>
-                                        {
-                                            isFetching ? <Preloader/> : <Result weather={weatherData} forecast={forecast}/>
-                                        }
-                                    </div>
-                                )}
-                            </Transition>
-                        </> : <NotFound isLoaded={isLoaded}/>
+                {!error ?
+                    <>
+                        <Transition
+                            in={isLoaded}
+                            timeout={1000}
+                        >
+                            {state => (
+                                <div className={`result-wrap ${state}`}>
+                                    {
+                                        isFetching ? <Preloader/> :
+                                            <Result weather={weatherData} forecast={forecast}/>
+                                    }
+                                </div>
+                            )}
+                        </Transition>
+                    </> :
+                    <NotFound isLoaded={isLoaded}/>
                 }
             </div>
         </div>
