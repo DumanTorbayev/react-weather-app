@@ -46,30 +46,24 @@ const App = () => {
         <div className="container">
             <Header isLoaded={isLoaded}>wheather app</Header>
             <div className='content'>
-                <Transition
-                    in={isLoaded}
-                    timeout={1000}
-                >
+                <Transition in={isLoaded} timeout={1000}>
                     {state => <h1 className={`body-title ${state}`}>wheather app</h1>}
                 </Transition>
                 <Search onSearch={onSearch} isLoaded={isLoaded}/>
-                {!error ?
-                    <>
-                        <Transition
-                            in={isLoaded}
-                            timeout={1000}
-                        >
+                {!error
+                    ? <>
+                        <Transition in={isLoaded} timeout={1000}>
                             {state => (
                                 <div className={`result-wrap ${state}`}>
-                                    {
-                                        isFetching ? <Preloader/> :
-                                            <Result weather={weatherData} forecast={forecast}/>
+                                    {isFetching
+                                        ? <Preloader/>
+                                        : <Result weather={weatherData} forecast={forecast}/>
                                     }
                                 </div>
                             )}
                         </Transition>
-                    </> :
-                    <NotFound isLoaded={isLoaded}/>
+                    </>
+                    : <NotFound isLoaded={isLoaded}/>
                 }
             </div>
         </div>
