@@ -9,14 +9,11 @@
 ![preview](https://i.imgur.com/dRmNnZw.jpeg)
 
 ## Инструкции
-Сначала клонируйте этот репозиторий.
-
+Сначала клонируйте этот репозиторий.<br/>
 `$ git clone https://github.com/DumanTorbayev/react-weather-app.git`
 
-Установить зависимости. Убедитесь, что в вашей системе уже установлены nodejs & npm.
-
+Установить зависимости. Убедитесь, что в вашей системе уже установлены nodejs & npm.<br/>
 `$ npm install # or yarn`
 
-Запустить приложение
-
+Запустить приложение<br/>
 `$ npm start # or yarn start`
