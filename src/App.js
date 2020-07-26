@@ -13,7 +13,7 @@ const App = () => {
     const onSearch = (searchValue) => {
         dispatch(setIsFetching(true))
         getData(searchValue)
-            .then(axios.spread((weather, forecast, error) => {
+            .then(axios.spread((weather, forecast) => {
                 const weatherInfo = {
                     city: weather.data.name,
                     country: weather.data.sys.country,
