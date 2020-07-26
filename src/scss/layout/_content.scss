@@ -27,12 +27,7 @@
   visibility: hidden;
   color: #fff;
 
-  &.entering {
-    -webkit-animation: isVisible 1s ease-out forwards;
-    animation: isVisible 1s ease-out forwards;
-  }
-
-  &.entered {
+  &.entering, &.entered {
     -webkit-animation: isVisible 1s ease-out forwards;
     animation: isVisible 1s ease-out forwards;
   }
@@ -54,12 +49,7 @@
 
   }
 
-  &.entered {
-    -webkit-animation: bodyTitleToTop 1s ease-out forwards;
-    animation: bodyTitleToTop 1s ease-out forwards;
-  }
-
-  &.entering {
+  &.entered, &.entering {
     -webkit-animation: bodyTitleToTop 1s ease-out forwards;
     animation: bodyTitleToTop 1s ease-out forwards;
   }
@@ -80,12 +70,7 @@
   @media (max-width: 992.98px) {
   }
 
-  &.entered {
-    -webkit-animation: searchToTop 1.5s ease-out forwards;
-    animation: searchToTop 1.5s ease-out forwards;
-  }
-
-  &.entering {
+  &.entered, &.entering {
     -webkit-animation: searchToTop 1.5s ease-out forwards;
     animation: searchToTop 1.5s ease-out forwards;
   }
@@ -126,12 +111,7 @@
   -ms-transform: translateY(15%);
   transform: translateY(15%);
 
-  &.entered {
-    -webkit-animation: resultToTop 1.5s ease-out forwards;
-    animation: resultToTop 1.5s ease-out forwards;
-  }
-
-  &.entering {
+  &.entered, &.entering {
     -webkit-animation: resultToTop 1.5s ease-out forwards;
     animation: resultToTop 1.5s ease-out forwards;
   }
@@ -151,12 +131,7 @@
     -ms-transform: translateY(500%);
     transform: translateY(500%);
 
-    &.entered {
-      -webkit-animation: notFoundToTop 1.5s ease-out forwards;
-      animation: notFoundToTop 1.5s ease-out forwards;
-    }
-
-    &.entering {
+    &.entered, &.entering {
       -webkit-animation: notFoundToTop 1.5s ease-out forwards;
       animation: notFoundToTop 1.5s ease-out forwards;
     }
